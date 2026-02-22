@@ -14,7 +14,10 @@ def cinema_visit(
     for person in customers:
         new_customer = Customer(name=person["name"], food=person["food"])
         customer_objects.append(new_customer)
-        CinemaBar.sell_product(product=new_customer.food, customer=new_customer)
+        CinemaBar.sell_product(
+            product=new_customer.food,
+            customer=new_customer
+        )
 
     cleaner_instance = Cleaner(name=cleaner)
     hall_instance = CinemaHall(number=hall_number)
