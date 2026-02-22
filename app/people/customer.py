@@ -1,9 +1,7 @@
 class Customer:
-    def __init__(self, name, food):
+    def __init__(self, name: str, food: str) -> None:
         self.name = name
         self.food = food
-        pass
 
-    def watch_movie(self, movie):
-        print (f"{self.name} is watching {movie}.")
-        pass
+    def watch_movie(self, movie: str) -> None:
+        print(f'{self.name} is watching "{movie}".')
